@@ -56,11 +56,9 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
         tvOptionOne?.setOnClickListener(this)
         btnSubmit?.setOnClickListener(this)
 
-
-
-
     }
 
+    @SuppressLint("SetTextI18n")
     private fun setQuestion() {
         val question: Questions = mQuestionList!![mCurrentPosition - 1]
         defaultOptionsView()
@@ -73,8 +71,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
         progressBar?.progress =
             mCurrentPosition // Setting the current progress in the progressbar using the position of question
-        tvProgress?.text =
-            "$mCurrentPosition" + "/" + progressBar?.max // Setting up the progress text
+        tvProgress?.text = "$mCurrentPosition" + "/" + "${progressBar?.max?.plus(1)}" // Setting up the progress text
 
         ivImage?.setImageResource(question.images)
         tvQuestion?.text = question.questions

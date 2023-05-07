@@ -26,11 +26,11 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_flag_of_denmark"
+        android:layout_height="122dp"
         android:layout_gravity="center"
+        android:layout_marginTop="25dp"
         android:contentDescription="image"
-        android:layout_marginTop="25dp"/>
+        android:src="@drawable/tropy" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

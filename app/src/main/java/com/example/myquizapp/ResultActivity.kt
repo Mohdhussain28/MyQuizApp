@@ -18,7 +18,6 @@ class ResultActivity : AppCompatActivity() {
         val correctAnswer=intent.getIntExtra(Constant.CORRECT_ANSWERS,0)
         val totalQuestion=intent.getIntExtra(Constant.TOTAL_QUESTIONS,0)
 
-
         resultName.text=intent.getStringExtra(Constant.USER_NAME)
         scoreCard.text=intent.getStringExtra(Constant.USER_NAME)
 
